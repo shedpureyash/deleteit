@@ -159,3 +159,64 @@ body, html {
   height: 0.75cm;
 }
 
+
+
+.contact-us
+{
+  border: solid 2px grey;
+  margin-left: 300px;
+  border-spacing: 30px;
+  padding: 0cm;
+}
+.contact-us th
+{
+  font-size: 0.5cm;
+}
+.contact-us th input
+{
+  text-align: left;
+  font-size: 0.5cm;
+  height: 1cm;
+}
+.button-contact
+{
+  border:red solid 3px ; 
+  height: 1.5cm;
+   width: 2.5cm; 
+   margin-left: 650px;
+    background-color: green;
+     border-radius: 30px; 
+     font-size: large;
+}
+.input-class
+{
+  background-color:rgb(219, 219, 219);
+}
+
+
+.stars
+{
+  background-color: orange;
+}
+
+
+
+.user-img
+{
+  height: 4cm;
+  width: 4cm;
+  border-radius: 50%;
+}
+
+.checked {
+  color: orange;
+}
+.th-class1
+{
+  border:red solid 10px;
+  width: 300px;
+  height: 300px;
+  align-content: space-around;
+  border-radius: 1cm;
+  background-color: wheat;
+}
