@@ -12,8 +12,7 @@
 .menu-bar ul
 {
     display:inline-flex;
-    list-style: none;
-    color: white;
+    list-style: none; 
 }
 
 .menu-bar ul li
@@ -33,14 +32,7 @@
    border-radius: 3px;
 }
 
-.icons a{
-    font-size: 1rem;
-    color:grey;
-    padding-left: 1rem;
-  }
-  .icons a:hover{
-    color:var(--green);
-  }
+
   .img
   {
       height: 30px;
@@ -78,7 +70,6 @@
 
 
 
-
 body, html {
   height: 100%;
   margin: 0;
@@ -102,23 +93,23 @@ body, html {
 
 .home{
   display: flex;
-  align-items: center;
-  justify-content: center;
+ 
+ 
   background: url(images/banner-bg.webp) no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 17rem;
-  padding-bottom: 10rem;
+  height: 10cm;
 }
 
 .btn
 {
-  border: solid rgba(128, 128, 128, 0.836) ;
-  text-align: center;
-  text-decoration: none;
-  margin-left: 350px;
-  color: grey
-  
+  margin-left: 16cm;
+  margin-top: 2cm;
+background-color: green;
+height: 1cm;
+width: fit-content;
+border-radius: 20%;
+border: grey solid 2px;
 }
 
 
@@ -194,10 +185,6 @@ body, html {
 }
 
 
-.stars
-{
-  background-color: orange;
-}
 
 
 
@@ -219,4 +206,74 @@ body, html {
   align-content: space-around;
   border-radius: 1cm;
   background-color: wheat;
+}
+
+.unique
+{
+  pointer-events: none;
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  color: white;
+  font-size: 20px;
+}
+
+
+.deal{
+  background:url(images/deal-bg.jpg) no-repeat;
+  text-align: center;
+}
+
+.deal .content{
+  max-width: 50rem;
+  text-align: center;
+}
+
+
+
+
+.deal .content .count-down{
+  display: flex;
+  gap:1rem;
+  padding:.5rem 0;
+  margin-left: 6cm;
+}
+
+.deal .content .count-down .box{
+  width:9rem;
+  text-align: center;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  border:.1rem solid rgba(0,0,0,.3);
+}
+
+.deal .content .count-down .box h3{
+  color:var(--black);
+  background:#fff;
+  height: 7rem;
+  line-height: 7rem;
+  width:100%;
+  font-size: 5rem;
+}
+
+.deal .content .count-down .box span{
+  display: block;
+  background:blueviolet;
+  color:#fff;
+  width:100%;
+  padding:.5rem;
+  font-size: 2rem;
+}
+.btn2
+{
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  margin-left: 5cm;
+  background:green;
+  color:#fff;
+  padding:.8rem 3rem;
+  font-size: 1.7rem;
+  text-align: center;
+  cursor: pointer;
 }

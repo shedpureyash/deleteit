@@ -9,51 +9,47 @@
     <link rel="stylesheet" href="css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    
+    <script src="js.js"></script>
 </head>
 <body  class="bg" background="images/backgroung.jpeg">
 
-    <br>
+      
+   <!-- Navigation Bar starts-->
+
     
-    <!-- Navigation Bar starts-->
-
-    <div style=" display:inline-block;">
-        <h1 style="color: green; margin-left: 2cm; display:inline-block;">OrgAcre</h1> 
-        <input style="margin-left: 750px; height: 30px;" type="search">
-    </div>
-
-    <div >
+   <h1 style="color: green; margin-left: 2cm; margin-top: 0.3cm;  display:inline-flex;">OrgAcre</h1>   
        
-        
-    </div>
+   <input type="text" placeholder="Search.." name="search" style="height: 0.9cm; width: 5cm; margin-left: 800px; background-color: rgb(240, 240, 240);">
+ <button type="submit" style="height: .9cm; width: 1cm;"><i class="fa fa-search"></i></button>
+ <button type="submit" style="height: .9cm; width: 1cm;"><i id="cart-btn" class="fas fa-shopping-cart"></i></button>
+ <button type="submit" style="height: .9cm; width: 1cm;"><i class="fas fa-user-circle"></i></button>
+   <br>   
+   <br>
 
-    <br>
-    <br>
-
-    <div class="menu-bar">
-    <ul>
-        <li ><a href="html.html">Home</a></li>
-        <li ><a href="category.html">Catogery</a>
-            <div class="sub-menu-1">
-            <ul >
-                <li><a href="">Vegetables</a></li>
-                <li><a href="">Fruits</a></li>
-                <li><a href="">Dry Fruits</a></li>
-                <li><a href="">Cereals</a></li>
-                <li style="border-bottom:none ;"><a href="">Spices</a></li>
-            </ul>
-        </div>
-        </li>
-        <li><a href="About-us.html">About us</a></li>
-        <li ><a href="Reviews.html">Reviews</a></li>
-        <li  class="active"><a href="contact.html">Contact</a></li>
-    </ul>
-    <a href=""><img class="img" src="images/Add-to-cart.png" alt="cart"></a>
-    <a href=""><img class="img" src="images/like.png" alt="cart"></a>
-    <a href=""><img class="img" src="images/login.png" alt="cart"></a>
-</div>
+<div class="menu-bar">
+<ul>
+   <li  class="active"><a  href="html.html">Home</a></li>
+   <li><a href="category.html">Catogery</a>
+       <div class="sub-menu-1">
+       <ul >
+           <li><a href="vegetable.html">Vegetables</a></li>
+           <li><a href="">Fruits</a></li>
+           <li><a href="">Dry Fruits</a></li>
+           <li style="border-bottom:none ;"><a href="">Cereals</a></li>
+           
+       </ul>
+   </div>
+   </li>
+   <li><a href="About-us.html">About us</a></li>
+   <li><a href="Reviews.html">Reviews</a></li>
+   <li><a href="contact.html">Contact</a></li>
    
-       <!-- Navigation Bar ends-->
+</ul>
+
+</div>
+
+
+  <!-- Navigation Bar ends-->
         <!--
        <div class="contact-us">
         Name  <input type="text"  placeholder="Enter your name">  
@@ -76,7 +72,7 @@
                 Email 
                </th>
                <th>
-                <input  class="input-class"  type="email" >  
+                <input  class="input-class"  type="email" id="email" >  
                </th>
            </tr>
            <tr>
@@ -84,13 +80,13 @@
                 Mobile No.   
                </th>
                <th>
-               <input  class="input-class"  type="tel">  
+               <input  class="input-class"  type="tel" maxlength="10" id="mob">  
                </th>
                <th>
                 Subject
                </th>
                <th>
-                <input  class="input-class"  type="text">
+                <input  class="input-class"  type="text" maxlength="50">
                </th>
            </tr>
            <tr  >
@@ -101,7 +97,7 @@
            </tr>
        </table>
        <br>
-       <button class="button-contact" type="submit" style="">SUBMIT</button>
+       <button class="button-contact" type="submit" onclick="validate()">SUBMIT</button>
    
         
 </body>
