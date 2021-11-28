@@ -5,6 +5,12 @@ document.getElementById("quantity").value=""
 }
 function validate()
 {
+    var a=document.getElementById("name").value;
+    if(a=="")
+    {
+        alert("Name can't be empty")
+        
+    }
     var x = document.getElementById("email").value;
     var atpos = x.indexOf("@");
     var dotpos = x.lastIndexOf(".");
@@ -14,16 +20,7 @@ function validate()
 
     var y = document.getElementById("mob").value;
     var phoneno = /^\d{10}$/;
-    /*
-    if(y.value.match(phoneno))
-        {
-            
-        }
-      else
-        {
-        alert("message");
-        }
-    */
+   
         if(isNaN(y)||y.indexOf(" ")!=-1)
         {
            alert("Enter numeric value")
@@ -31,13 +28,26 @@ function validate()
         }
         if (x.length<10)
            {
-                alert("enter 8 number");
+                alert("enter 10 number");
             
            }
+           var b=document.getElementById("sub").value;
+    if(b=="")
+    {
+        alert("Subject can't be empty")
+    }
+        var c=document.getElementById("msg").value;
+    if(c=="")
+    {
+        alert("Message can't be empty")
+    
+    }
+
 }
 
 
-let countDate = new Date('dec 1, 2021 00:00:00').getTime();
+
+let countDate = new Date('dec 5, 2021 00:00:00').getTime();
 
 function CountDown(){
 
@@ -60,7 +70,14 @@ function CountDown(){
     document.getElementById('second').innerText = s;
 
 }
-
 setInterval(function(){
     CountDown();
 },1000)
+
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }

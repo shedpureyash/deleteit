@@ -6,52 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="js.js"></script>
     
 </head>
-<body class="bg" background="images/backgroung.jpeg">
+<body  background="images/backgroung.jpeg">
+ <!-- Navigation Bar starts-->
 
-    <br>
     
-    <!-- Navigation Bar starts-->
-
-    <div style=" display:inline-block;">
-        <h1 style="color: green; margin-left: 2cm; display:inline-block;">OrgAcre</h1> 
-        <input style="margin-left: 750px; height: 30px;" type="search">
-    </div>
-
-    <div >
+ <h1 style="color: green; margin-left: 2cm; margin-top: 0.3cm;  display:inline-flex;">OrgAcre</h1>   
        
-        
-    </div>
+ <input type="text" placeholder="Search.." name="search" style="height: 0.9cm; width: 5cm; margin-left: 800px; background-color: rgb(240, 240, 240);">
+<button type="submit" style="height: .9cm; width: 1cm;"><i class="fa fa-search"></i></button>
+<button type="submit" style="height: .9cm; width: 1cm;"><i id="cart-btn" class="fas fa-shopping-cart"></i></button>
+<button  class="open-button" onclick="openForm()" type="submit" ><i class="fas fa-user-circle"></i></button>
+ <br>   
+ <br>
 
-    <br>
-    <br>
+<div class="menu-bar">
+<ul>
+ <li ><a  href="html.html">Home</a></li>
+ <li class="active"><a href="fruits.html">Catogery</a>
+     <div class="sub-menu-1">
+     <ul >
+         <li><a href="vegetable.html">Vegetables</a></li>
+         <li><a href="fruits.html">Fruits</a></li>
+         <li><a href="dry fruits.html">Dry Fruits</a></li>
+         <li style="border-bottom:none ;"><a href="cereals.html">Cereals</a></li>
+         
+     </ul>
+ </div>
+ </li>
+ <li><a href="About-us.html">About us</a></li>
+ <li><a href="Reviews.html">Reviews</a></li>
+ <li><a href="contact.html">Contact</a></li>
+ 
+</ul>
 
-    <div class="menu-bar">
-    <ul>
-        <li ><a href="html.html">Home</a></li>
-        <li class="active"><a href="category.html">Catogery</a>
-            <div class="sub-menu-1">
-            <ul >
-                <li><a href="vegetable.html">Vegetables</a></li>
-                <li><a href="">Fruits</a></li>
-                <li><a href="">Dry Fruits</a></li>
-                <li><a href="">Cereals</a></li>
-                <li style="border-bottom:none ;"><a href="">Spices</a></li>
-            </ul>
-        </div>
-        </li>
-        <li><a href="About-us.html">About us</a></li>
-        <li><a href="Reviews.html">Reviews</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <a href=""><img class="img" src="images/Add-to-cart.png" alt="cart"></a>
-    <a href=""><img class="img" src="images/like.png" alt="cart"></a>
-    <a href=""><img class="img" src="images/login.png" alt="cart"></a>
 </div>
-   
-       <!-- Navigation Bar ends-->
+
+
+<!-- Navigation Bar ends-->
+ <div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn6">Login</button>
+    <button type="button" class="btn6 cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
        
      <table class="table-poperty"> 
          <tr>

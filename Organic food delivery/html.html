@@ -18,6 +18,9 @@
     
     
     <!-- Navigation Bar starts-->
+    <!-- cart section-->
+   
+    <!-- cart section-->
 
     
         <h1 style="color: green; margin-left: 2cm; margin-top: 0.3cm;  display:inline-flex;">OrgAcre</h1>   
@@ -25,20 +28,20 @@
         <input type="text" placeholder="Search.." name="search" style="height: 0.9cm; width: 5cm; margin-left: 800px; background-color: rgb(240, 240, 240);">
       <button type="submit" style="height: .9cm; width: 1cm;"><i class="fa fa-search"></i></button>
       <button type="submit" style="height: .9cm; width: 1cm;"><i id="cart-btn" class="fas fa-shopping-cart"></i></button>
-      <button type="submit" style="height: .9cm; width: 1cm;"><i class="fas fa-user-circle"></i></button>
+      <button  class="open-button" onclick="openForm()" type="submit" ><i class="fas fa-user-circle"></i></button>
         <br>   
         <br>
 
     <div class="menu-bar">
     <ul>
         <li  class="active"><a  href="html.html">Home</a></li>
-        <li><a href="category.html">Catogery</a>
+        <li><a href="html.html">Catogery</a>
             <div class="sub-menu-1">
             <ul >
                 <li><a href="vegetable.html">Vegetables</a></li>
-                <li><a href="">Fruits</a></li>
-                <li><a href="">Dry Fruits</a></li>
-                <li style="border-bottom:none ;"><a href="">Cereals</a></li>
+                <li><a href="fruits.html">Fruits</a></li>
+                <li><a href="dry fruits.html">Dry Fruits</a></li>
+                <li style="border-bottom:none ;"><a href="cereals.html">Cereals</a></li>
                 
             </ul>
         </div>
@@ -53,6 +56,22 @@
    
    
        <!-- Navigation Bar ends-->
+
+       <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Login</h1>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit" class="btn6">Login</button>
+          <button type="button" class="btn6 cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+      
        
        <br>
        <h1 style=" color: green; text-align: center;">Welcome to OrgAcre</h1>
@@ -62,13 +81,15 @@
         <div style="margin-top: 3cm;">
             <h2 style="color: Blue; margin-left: 12cm;">Fresh and <span style="color: orange;">Organic</span> products for you</h2>
             <br>
-            <h4 style="color: red;  margin-left: 6cm">You are what you eat, so don’t be fast, cheap, easy, or fake. Order from OrgAcre and get fresh and
-                nutritious food from our farm.
-            </h4>
-            <button class="btn"><h4>Shop now</h4></button>
+            <h3 style="color: red;  margin-left: 6cm">You are what you eat, so don’t be fast, cheap, easy, or fake. Order from OrgAcre and get fresh and
+               
+            </h3>
+            <h3 style="color: red;  margin-left: 13cm"> nutritious food from our farm.</h3>
+            <a class="btn" href="#">Shop now</a>
             </button>
         </div>    
     </section>
-    
+    <br><br><br>
+    <div style="background:rgb(33, 33, 51); height: 1cm; margin-top: 3px;"></div>
 </body>
 </html>

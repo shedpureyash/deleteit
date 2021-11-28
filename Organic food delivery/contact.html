@@ -11,7 +11,7 @@
 
     <script src="js.js"></script>
 </head>
-<body  class="bg" background="images/backgroung.jpeg">
+<body  background="images/backgroung.jpeg">
 
       
    <!-- Navigation Bar starts-->
@@ -22,27 +22,27 @@
    <input type="text" placeholder="Search.." name="search" style="height: 0.9cm; width: 5cm; margin-left: 800px; background-color: rgb(240, 240, 240);">
  <button type="submit" style="height: .9cm; width: 1cm;"><i class="fa fa-search"></i></button>
  <button type="submit" style="height: .9cm; width: 1cm;"><i id="cart-btn" class="fas fa-shopping-cart"></i></button>
- <button type="submit" style="height: .9cm; width: 1cm;"><i class="fas fa-user-circle"></i></button>
+ <button  class="open-button" onclick="openForm()" type="submit" ><i class="fas fa-user-circle"></i></button>
    <br>   
    <br>
 
 <div class="menu-bar">
 <ul>
-   <li  class="active"><a  href="html.html">Home</a></li>
-   <li><a href="category.html">Catogery</a>
+   <li><a  href="html.html">Home</a></li>
+   <li><a href="contact.html">Catogery</a>
        <div class="sub-menu-1">
        <ul >
            <li><a href="vegetable.html">Vegetables</a></li>
-           <li><a href="">Fruits</a></li>
-           <li><a href="">Dry Fruits</a></li>
-           <li style="border-bottom:none ;"><a href="">Cereals</a></li>
+           <li><a href="fruits.html">Fruits</a></li>
+           <li><a href="dry fruits.html">Dry Fruits</a></li>
+           <li style="border-bottom:none ;"><a href="cereals.html">Cereals</a></li>
            
        </ul>
    </div>
    </li>
    <li><a href="About-us.html">About us</a></li>
    <li><a href="Reviews.html">Reviews</a></li>
-   <li><a href="contact.html">Contact</a></li>
+   <li  class="active"><a href="contact.html">Contact</a></li>
    
 </ul>
 
@@ -50,15 +50,22 @@
 
 
   <!-- Navigation Bar ends-->
-        <!--
-       <div class="contact-us">
-        Name  <input type="text"  placeholder="Enter your name">  
-        Email <input type="email" > <br>
-        Mobile No. <input type="tel"> 
-        Subject <input type="text"> <br>
-        Message <input type="text" height="300px">
-       </div>
-       -->
+  <div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h1>Login</h1>
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+  
+      <button type="submit" class="btn6">Login</button>
+      <button type="button" class="btn6 cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+
+  
        <br>
        <table class="contact-us" >
            <tr>
@@ -66,7 +73,7 @@
                 Name 
                </th>
                <th>
-                <input  class="input-class" type="text">
+                <input  class="input-class" type="text" id="name">
                </th>
                <th>
                 Email 
@@ -86,12 +93,12 @@
                 Subject
                </th>
                <th>
-                <input  class="input-class"  type="text" maxlength="50">
+                <input  class="input-class"  type="text" maxlength="50" id="sub">
                </th>
            </tr>
            <tr  >
                <th colspan="4" cellpadding="0" >
-            Message <input  class="input-class"  type="text" style="height: 200px; width:400px;">
+            Message <input  class="input-class"  type="text" style="height: 200px; width:400px;" id="msg">
         </th>
         
            </tr>
