@@ -26,7 +26,7 @@ function validate()
            alert("Enter numeric value")
             
         }
-        if (x.length<10)
+        if (y.length<10)
            {
                 alert("enter 10 number");
             
